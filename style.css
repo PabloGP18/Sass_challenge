@@ -41,13 +41,12 @@ article section {
   flex-grow: 1;
   flex-basis: 45%;
   border: 1px silver solid;
-  padding: 16px;
   margin: 16px;
   clear: both;
   overflow: auto;
   box-sizing: border-box;
 }
-article section#selling-points {
+article section #selling-points {
   flex-grow: 2;
   flex-basis: 100%;
 }
@@ -62,15 +61,14 @@ article code {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
 }
-article code.before {
+article code .before {
   float: left;
   width: 40%;
 }
-article code.after {
+article code .after {
   float: right;
   width: 40%;
 }
