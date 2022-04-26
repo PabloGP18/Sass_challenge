@@ -1,25 +1,33 @@
-$red: 16px;
-$blue: 8px;
+$general-padding: 8px;
+
+*{
+  padding:$general-padding;
+}
+
+$align-text: center;
 
 @mixin align{
   text-align:center;
 }
 
-@mixin theme {
+@mixin theme (){
   color: rgba(255, 255, 255, 0.75);
   padding: 10px 10px 19px -4px;
 }
 .article section{
-  @include theme;
+  @include theme();
 }
 
 h6{
   font-size: 2em;
-  padding: $red*2;
+  padding: $general-padding*2;
   margin-bottom: 0px
 }
-h1 h6{
-  @include align;
+h1{
+  text-align:$align-text ;
+}
+h6{
+  text-align:$align-text ;
 }
 body {
   font: 100% "Space Mono", monospace;
@@ -38,9 +46,6 @@ body {
       flex-grow: 1;
       flex-basis: 45%;
       border: 1px silver solid;
-      -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-      -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-      box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
       padding: 16px;
       margin: 16px;
       clear: both;

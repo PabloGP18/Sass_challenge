@@ -1,3 +1,7 @@
+* {
+  padding: 8px;
+}
+
 .article section {
   color: rgba(255, 255, 255, 0.75);
   padding: 10px 10px 19px -4px;
@@ -5,11 +9,15 @@
 
 h6 {
   font-size: 2em;
-  padding: 32px;
+  padding: 16px;
   margin-bottom: 0px;
 }
 
-h1 h6 {
+h1 {
+  text-align: center;
+}
+
+h6 {
   text-align: center;
 }
 
@@ -33,9 +41,6 @@ article section {
   flex-grow: 1;
   flex-basis: 45%;
   border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   padding: 16px;
   margin: 16px;
   clear: both;
